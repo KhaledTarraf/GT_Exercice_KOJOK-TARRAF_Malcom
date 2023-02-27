@@ -29,10 +29,6 @@ a:hover {
     top: 0;
 }
 
-.content {
-    margin-top: 80px;
-}
-
 .logo img {
     width: 60px;
     height: 70px;
@@ -51,6 +47,8 @@ a:hover {
 }
 
 .content {
+    font-size: 40px;
+    margin-top: 80px;
     flex: 1 0 auto;
 }
 
