@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5d2638;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.header {
+    background-color: #36131f;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 75px;
+    width: 100vw;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 70px;
+}
+
+.menu {
+    font-size: 45px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    list-style-type: none;
+    margin: 0.7rem;
+    padding: 0.4rem;
+}
+
+.content {
+    font-size: 40px;
+    margin-top: 80px;
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #36131f;
+    color: beige;
+}
+
+.bloc {
+    width: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 50px  ;
+}
+
+.services h3,
+.contact h3,
+.media h3 {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.contact p {
+    padding-bottom: 20px;
+}
+
+.services-list,
+.media-list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.media-list li {
+    padding: 5px 0px;   
+}
+
+.services-list li {
+    padding: 10px 0px;
+}
+
+.media-list img {
+    width: 50px;
+}
+
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0px 100px;
+}
+
+.timeline {
+    font-size: 30px;
+    width: 100%;
+    height: 1200px;
+    overflow-y: auto;
+}
+
+/*Timeline*/
+
+.timeline-object {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .timeline-object.complete::after {
+    content: '';
+    display: block;
+    position: absolute;
+    
+    width: 4px;
+    height: 100px;
+    background-color: green;
+    
+    left: 23px;
+    top: 50px;
+    transform: translateX(-50%);
+  }
+
+  .timeline-status {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: green;
+  }
+
+  .timeline-object:not(.complete) .timeline-status {
+    background: black;
+    border: 4px solid black;
+  }
+
+  .timeline-content {
+    margin-left: 15px;
+  }
+  
+  .timeline-content h3 {
+    color: beige;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content span {
+    color: black;
+    font-size: .9em;
+    font-weight: bold;
+    margin-left: 7px;
+  }
+
+  .timeline-object:not(.complete) .timeline-content h3 {
+    color: beige;
+  }
